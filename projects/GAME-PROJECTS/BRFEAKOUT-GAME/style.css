@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid{
+    position: relative;
+    width: 560px;
+    height: 300px;
+    border:1px solid black;
+    top: 2rem;
+    left: 2rem;
+}
+.block{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: blue;
+}
+.user{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background:purple;
+}
+.ball{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+}

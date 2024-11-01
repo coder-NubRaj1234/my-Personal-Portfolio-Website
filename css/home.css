@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+#home {
+  width: 100vw;
+  height: calc(100vh - 10vh);
+  display: grid;
+  grid-template-columns: 1fr 30vw;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10rem;
+  padding: 5rem 6rem 0 9.5rem;
+  overflow: hidden;
+}
+#my-self {
+  position: relative;
+  height: 100%;
+  padding-top: 8rem;
+  opacity: 1;
+  transition: all 1.5s ease-in-out;
+}
+#my-self > h4 {
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+#my-self > h2 {
+  font-size: 4rem;
+  color: var(--primerary-color);
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Fredoka", sans-serif;
+  line-height: 1;
+}
+#red-black {
+  color: var(--red-black);
+}
+.black-red {
+  color: var(--white-red);
+}
+#my-self > h2 > :nth-child(3) {
+  font-size: 3rem;
+}
+#my-self > p {
+  color: var(--gray-color);
+  font-size: 15px;
+  margin-top: 1rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  padding: 10px;
+  line-height: 1.7;
+  width: 80%;
+}
+#home-foot {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--primerary-color);
+  position: absolute;
+  bottom: 1rem;
+}
+#find-me > h2 {
+  transform: translateX(-150%);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+#home-foot h2 {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 1px;
+  color: var(--gray-color);
+}
+#find-icons {
+  display: flex;
+  gap: 1rem;
+  /* background: red; */
+}
+#find-icons > :nth-child(1) {
+  transform: translate(-200%, 90%);
+  transition: all 1s ease-in-out;
+}
+#find-icons > :nth-child(2) {
+  transform: translate(-300%, 100%);
+  transition: all 1s ease-in-out;
+}
+#find-icons > :nth-child(3) {
+  transform: translate(-500%, 110%);
+  transition: all 1s ease-in-out;
+}
+
+#find-icons > button:hover {
+  transform: scale(1.1) !important;
+  transition: transform 0s !important;
+}
+
+#find-icons > button {
+  color: var(--primerary-color);
+  border-radius: 9px;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 22px;
+  margin-top: 1.5rem;
+  box-shadow: var(--box-shadow);
+  background: transparent;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+#my-skills > h2 {
+  color: var(--gray-color);
+  opacity: 0;
+}
+#my-skills > h2 {
+  transform: translateX(150%);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+#skill-img {
+  display: flex;
+  gap: 1rem;
+  padding-top: 1.1rem;
+}
+
+#skill-img > img {
+  width: 50px;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 9px;
+  opacity: 0;
+}
+#css-logo {
+  padding: 5px !important;
+}
+#skill-img > img:hover {
+  transform: scale(1.1) !important;
+  transition: transform 0s !important ;
+}
+#skill-img > :nth-child(1) {
+  transform: translate(500%, 110%);
+  transition: all 1s ease-in-out;
+}
+#skill-img > :nth-child(2) {
+  transform: translate(300%, 100%);
+  transition: all 1s ease-in-out;
+}
+#skill-img > :nth-child(3) {
+  transform: translate(200%, 90%);
+  transition: all 1s ease-in-out;
+}
+
+/* image container */
+#home-img {
+  height: 100%;
+  box-sizing: border-box;
+}
+#img-container {
+  height: 100%;
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#h-image:hover {
+  transform: translateY(0px) scale(1.07) !important;
+  z-index: 1;
+}
+#h-image {
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
+}
+#img-container img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.3s ease-in-out;
+  object-fit: cover;
+}
+
+/* media screen for  mix-Width 1621px */
+@media screen and (max-width: 1621px) {
+  #home {
+    padding: 5rem 6rem 0 5rem;
+    gap: 10rem;
+    grid-template-columns: 1fr 30vw;
+  }
+  #my-self {
+    padding-top: 5rem;
+  }
+  #my-self > h4 {
+    font-size: 0.8rem !important;
+  }
+  #my-self > h2 {
+    font-size: 2rem !important;
+    line-height: 1.3;
+  }
+  #my-self > h2 > :nth-child(1) {
+    font-size: 3.4rem !important;
+  }
+  #my-self > h2 > :nth-child(3) {
+    font-size: 2.5rem !important;
+  }
+  #my-self > p {
+    font-size: 0.95rem !important;
+    padding: 0.3rem;
+    width: 100%;
+  }
+  #home-foot {
+    bottom: 0.5rem;
+    padding-left: 0.5rem !important;
+  }
+  #find-me > h2 {
+    transform: translateX(-100%);
+  }
+  #home-foot h2 {
+    font-size: 0.7rem;
+  }
+  #find-icons > button {
+    padding: 0.4rem 0.6rem;
+  }
+
+  #find-icons > :nth-child(1) {
+    transform: translate(-100%, 90%);
+    transition: all 1s ease-in-out;
+  }
+  #find-icons > :nth-child(2) {
+    transform: translate(-200%, 100%);
+    transition: all 1s ease-in-out;
+  }
+  #find-icons > :nth-child(3) {
+    transform: translate(-300%, 110%);
+    transition: all 1s ease-in-out;
+  }
+  #skill-img {
+    padding-top: 1.4rem;
+  }
+
+  #my-skills > h2 {
+    transform: translateX(100%);
+  }
+
+  #skill-img > img {
+    width: 2.5em;
+    padding: 0.5rem;
+  }
+  #skill-img > img:hover {
+    transform: scale(1.1) !important;
+    transition: transform 0s !important ;
+  }
+}
+
+/* media screen for Full HD Laptop mix-Width 1440 */
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+  #home {
+    height: calc(100vh - 8vh);
+  }
+  #my-self {
+    padding-top: 10rem;
+  }
+
+  #my-self > h2 {
+    margin: 2rem 0;
+  }
+  #my-self > h2 > :nth-child(1) {
+    font-size: 3.1rem !important;
+  }
+  #my-self > h2 > :nth-child(3) {
+    font-size: 2.2rem !important;
+  }
+  #my-self > p {
+    box-sizing: border-box;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #home {
+    height: calc(100vh - 8vh) !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+  #my-self {
+    /* background: pink; */
+    padding-top: 5rem;
+  }
+  #my-self h4 {
+    font-size: 1rem !important;
+  }
+  #my-self > h2 {
+    line-height: 1.3;
+  }
+  #my-self > h2 > :first-child {
+    display: block;
+  }
+  #my-self > h2 > :nth-child(2) {
+    font-size: 2.2rem;
+  }
+  #red-black {
+    font-size: 3.4rem;
+  }
+  #my-self > #home-text {
+    font-size: 1.2rem !important;
+    line-height: 1.6;
+  }
+  #home-foot h2 {
+    font-size: 1.1rem;
+  }
+  #find-icons > button {
+    padding: 0.4rem 0.6rem;
+    font-size: 2.2rem;
+  }
+  #find-icons > button:nth-child(1) {
+    padding: 0.8rem 1rem;
+  }
+
+  #skill-img > img {
+    width: 4rem;
+    padding: 1rem;
+  }
+
+  #skill-img > :nth-child(1) {
+    transform: translate(350%, 110%);
+    transition: all 1s ease-in-out;
+  }
+  #skill-img > :nth-child(2) {
+    transform: translate(200%, 100%);
+    transition: all 1s ease-in-out;
+  }
+  #skill-img > :nth-child(3) {
+    transform: translate(100%, 90%);
+    transition: all 1s ease-in-out;
+  }
+
+  #home-img {
+    display: none;
+  }
+}

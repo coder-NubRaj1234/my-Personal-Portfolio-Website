@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My Personal Portflow Web site</title>
+    <meta name="description" content="" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/images/letter-n.png" type="image/x-icon" />
+
+    <!-- this script tag for send mail........... -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!--Here is style Links............  -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/heir-form.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+
+    <!-- javascript Files links  -->
+
+    <script type="module" src="/js/project.js" defer></script>
+    <script type="module" src="/js/about.js" defer></script>
+    <script type="module" src="/js/index.js" defer></script>
+    <script type="module" src="/js/header.js" defer></script>
+    <script type="module" src="/js/home.js" defer></script>
+    <script type="module" src="/js/projects-data.js" defer></script>
+    <script type="module" src="/js/contact.js" defer></script>
+    <script type="module" src="/js/footer.js" defer></script>
+  </head>
+
+  <body class="body">
+    <!-- this is header part... -->
+    <header id="header">
+      <div id="h-left" class="hiddenClass">
+        <p id="logo">N</p>
+        <p id="logo-name">Nav<span>Raj</span></p>
+      </div>
+      <nav id="pc-nav-lists">
+        <div id="h-center">
+          <ul>
+            <li class="hiddenClass">
+              <a data-scroll="home">Home</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="about">About</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="projects">Projects</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="contact">Contact Me</a>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="h-right" class="hiddenClass">
+        <button id="hire-me">Hire me</button>
+        <button id="mood"><i class="fa-regular fa-sun"></i></button>
+        <button id="link-bar">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+      <!-- this for hamber bar.. -->
+      <nav id="hamber-nav-bar">
+        
+        <div id="links-list">
+          <ul>
+            <li class="hiddenClass">
+              <a data-scroll="home">Home</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="about">About</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="projects">Projects</a>
+              <p></p>
+            </li>
+            <li class="hiddenClass">
+              <a data-scroll="contact">Contact Me</a>
+              <p></p>
+            </li>
+          </ul>
+          <div id="hamber-icons">
+            <button id="ham-back-icon"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="ham-mood-icon"><i class="fa-regular fa-sun"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- this code is mian html page -->
+    <main>
+      <!-- this is hair form  -->
+      <div id="hair-me-container" class="form-Animation-left">
+        <form data-form="hari-form" id="hari-form">
+          <div id="hair-form-container">
+            <div id="form-left">
+              <label class="hair-lables" for="h-name">Name:</label>
+              <input
+                class="hair-inputs"
+                type="text"
+                name="Name:"
+                id="h-name"
+                placeholder="Enter your name"
+              />
+
+              <label class="hair-lables" for="h-email">Email:</label>
+              <input
+                class="hair-inputs"
+                type="text"
+                name="Email:"
+                id="h-email"
+                placeholder="Enter your email"
+              />
+
+              <label class="hair-lables" for="h-number">Phone No:</label>
+              <input
+                class="hair-inputs"
+                type="tel"
+                name="Phone No:"
+                id="h-number"
+                placeholder="Enter your number"
+              />
+            </div>
+            <div id="form-right">
+              <label class="hair-lables" for="h-message">Message:</label>
+              <textarea
+                class="hair-textarea"
+                name="Message:"
+                name="Message:"
+                id="h-message"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </div>
+          <div class="flex-center">
+            <button id="hair-send-btn" class="hair-bths">
+              <span>Send</span> <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button id="hair-black-btn" class="hair-bths">
+              <i class="fa-solid fa-delete-left"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- this page is home -->
+      <section id="home" data-scroll="home">
+        <div id="my-self" class="hiddenClass">
+          <h4 class="text-opacity-slow">Welcome to my world</h4>
+          <h2 class="text-opacity-slow">
+            <span>Hi, I'm <span id="red-black">Nabin Raj Upadhyay</span></span
+            ><br />
+            <span
+              ><span class="black-red">a</span> Professional Front-End Web
+              <br /><span class="black-red">Developer.</span></span
+            >
+          </h2>
+          <p class="text-opacity-slow" id="home-text">
+            A passionate Front-End Web Developer with a strong foundation in
+            HTML, CSS, and JavaScript.<br />Since starting my journey in 2024,
+            I've honed my skills in crafting interactive and responsive
+            websites.
+          </p>
+
+          <!-- here are icons  -->
+          <div id="home-foot">
+            <div id="find-me">
+              <h2 class="hiddenClass">FIND WITH ME</h2>
+              <div id="find-icons">
+                <button class="find-icons-c hiddenClass" data-id="fb-icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </button>
+                <button class="find-icons-c hiddenClass" data-id="github-icn">
+                  <i class="fa-brands fa-github"></i>
+                </button>
+                <button class="find-icons-c hiddenClass" data-id="in-icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- here are skill logo -->
+            <div id="my-skills">
+              <h2 class="hiddenClass">BEST SKILL ON</h2>
+              <div id="skill-img">
+                <img
+                  src="/images/html-logo.webp"
+                  alt="html-logo"
+                  class="hiddenClass"
+                />
+                <img
+                  id="css-logo"
+                  src="/images/css-logo.png"
+                  alt="css-logo"
+                  class="hiddenClass"
+                />
+                <img
+                  src="/images/js-logo.png"
+                  alt="js-logo"
+                  class="hiddenClass"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="home-img">
+          <div id="img-container">
+            <img
+              id="h-image"
+              class="hiddenClass"
+              src="/images/home-image.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- this page is about -->
+      <section id="about" data-scroll="about">
+        <div id="a-container">
+          <div id="a-left" class="hiddenClass">
+            <img
+              class="hiddenClass"
+              src="/images/about-image.png"
+              alt="about-image"
+            />
+          </div>
+
+          <div id="a-right">
+            <h3 class="hiddenClass">who i am ?</h3>
+
+            <p id="a-intro-para" class="text-opacity-slow"></p>
+            <p id="a-gole-para" class="text-opacity-slow"></p>
+
+            <a id="cv-dow-a" href="/pdf/mycv.pdf" download="NavRaj-CV">
+              <button class="hiddenClass" id="cv-btn">
+                Download CV <i class="fa-solid fa-download"></i></button
+            ></a>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- this is project page. -->
+      <section id="projects" data-scroll="projects">
+        <!-- this is header -->
+        <div id="section-h">
+          <h2 class="hiddenClass">My Projects</h2>
+          <p class="hiddenClass"></p>
+        </div>
+
+        <!-- projects Contants....... -->
+        <div id="project-container">
+          <!-- here are my projects -->
+        </div>
+      </section>
+
+      <hr />
+      <!-- this page is contact -->
+      <section id="contact-me" data-scroll="contact">
+        <div id="section-h">
+          <h2 class="hiddenClass">Have Question</h2>
+          <p class="hiddenClass"></p>
+          <h1 class="hiddenClass">Contact Me Now</h1>
+        </div>
+        <!-- form -->
+        <div id="form-container">
+          <p id="con-sucess-mes"></p>
+
+          <form id="form" data-form="contact-form">
+            <div id="input">
+              <input
+                type="text"
+                id="name"
+                placeholder="Your name"
+                class="defult-input-size"
+              />
+              <label for="name"></label>
+
+              <input
+                type="text"
+                placeholder="Email"
+                id="email"
+                class="defult-input-size"
+              />
+              <label for="email"></label>
+
+              <input
+                type="tel"
+                id="number"
+                placeholder="Phone Number"
+                class="defult-input-size"
+              />
+              <label for="number"></label>
+            </div>
+
+            <div id="text-area">
+              <textarea
+                id="message"
+                placeholder="Enter your message"
+                class="defult-text-area-size"
+              ></textarea>
+              <label for="message"></label>
+            </div>
+
+            <button class="hiddenClass" id="submit">
+              Submit Form <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- this part is footer....... -->
+    <footer id="footer">
+      <div class="f-cards hiddenClass" id="contact-number">
+        <p><i class="fa-brands fa-whatsapp"></i></p>
+        <div>
+          <p>9742400304</p>
+          <p>9865890341</p>
+        </div>
+      </div>
+      <div class="f-cards hiddenClass" id="addresh">
+        <p><i class="fa-solid fa-location-dot" id="location-icon"></i></p>
+        <div>
+          <p>Bedkot 5 Dharampur , Mahendranagar, Kanchanpur , Nepal</p>
+        </div>
+      </div>
+      <div class="f-cards hiddenClass" id="email">
+        <p><i class="fa-solid fa-envelope"></i></p>
+        <div>
+          <p>unabin18@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

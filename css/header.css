@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+#link-bar,
+#hamber-nav-bar {
+  display: none;
+}
+header {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.herder-sticky {
+  background: var(--secondary-color);
+  position: sticky;
+  top: 0;
+  box-shadow: var(--box-shadow);
+}
+#h-left {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 4rem;
+  height: 10vh;
+  color: #fff;
+  transform: translateX(-198%);
+  transition: all 1s ease-in-out;
+  opacity: 0.1;
+}
+#h-left > :nth-child(1) {
+  background: var(--red-color);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  padding: 1px 10px;
+  color: #fff;
+  font-weight: 900;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#h-left > :last-child {
+  line-height: 100%;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: var(--primerary-color);
+}
+
+#h-left > :last-child > span {
+  color: var(--red-color);
+}
+
+#h-center {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+#h-center > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2.5rem;
+  height: 100%;
+  padding-top: 15px;
+}
+
+#h-center > ul > li > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+#h-center > ul > li {
+  color: var(--primerary-color);
+  height: 100%;
+  list-style: none;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+#h-center > ul > li:nth-child(1) {
+  transform: translate(100%, -150%);
+}
+#h-center > ul > li:nth-child(2) {
+  transform: translate(100%, -150%);
+}
+#h-center > ul > li:nth-child(3) {
+  transform: translate(100%, -150%);
+}
+#h-center > ul > li:nth-child(4) {
+  transform: translate(100%, -150%);
+}
+#h-center > ul > li > p {
+  padding: 1px;
+  width: 100%;
+  margin-top: 5px;
+}
+.color-red {
+  color: red !important;
+}
+.link-hover {
+  background: var(--red-color);
+}
+#h-right {
+  right: 4rem;
+  position: relative;
+  transform: translateX(170%);
+  transition: all 1s ease-in-out;
+  opacity: 0.1;
+  display: flex;
+  gap: 2rem;
+  display: flex;
+}
+
+#h-right > #hire-me {
+  padding: 10px 20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  background: var(--red-color);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px var(--box-shadow-red-color);
+  font-weight: 600;
+  cursor: pointer;
+  animation: hairBtnAnim 1.5s ease-in-out infinite;
+}
+
+#h-right > button > i {
+  color: var(--primerary-color);
+  font-size: 20px;
+}
+#hire-me:hover {
+  opacity: 0.8;
+}
+#mood {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+#link-ber {
+  display: none;
+}
+#mood:hover {
+  background: var(--mood-color);
+}
+.header-static {
+  position: static !important;
+}
+.nav-animation {
+  transform: translate(0) !important;
+}
+
+@keyframes hairBtnAnim {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.01);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  40% {
+    transform: scale(1.03);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(1.04);
+  }
+  80% {
+    transform: scale(1.03);
+  }
+  90% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+/* meadis screen is 1821 max width.. */
+@media screen and (max-width: 1621px) {
+  #h-left {
+    transform: translateX(-170%);
+    left: 2rem;
+  }
+  #h-left > :nth-child(1) {
+    font-size: 25px;
+  }
+  #h-left > :last-child {
+    font-size: 1.4rem;
+  }
+  #h-center > ul > li > a {
+    font-size: 0.9rem;
+  }
+  #h-center > ul > li {
+    min-width: 4rem;
+  }
+  #h-center > ul > li > p {
+    padding: 0.05rem;
+  }
+  #h-right {
+    right: 2rem;
+    transform: translateX(150%);
+  }
+  #h-right > #hire-me {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.1rem;
+  }
+  #h-right > button > i {
+    font-size: 1.2rem;
+  }
+}
+
+/* meadis screen for full HD Laptop max width.. */
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+  header {
+    height: 8vh;
+  }
+  #h-left {
+    transform: translateX(-12vw);
+  }
+
+  #h-right {
+    right: 2rem;
+    transform: translateX(16vw);
+  }
+}
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 10px !important;
+  }
+  .hamer-bar-visible {
+    transform: translate(0) !important;
+    transition: all 0.5s ease-in-out;
+  }
+  #hamber-nav-bar {
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+  }
+  #mood,
+  #pc-nav-lists {
+    display: none;
+  }
+  #hamber-nav-bar {
+    display: block;
+  }
+
+  header {
+    justify-content: space-between;
+    height: 8vh;
+  }
+  #h-left {
+    left: 2rem;
+    gap: 0.5rem;
+    opacity: 0;
+    transform: translateX(-10rem);
+    transition: opacity 1.5s ease-in-out, transform 1s ease-in-out !important;
+  }
+  #h-left > :nth-child(1) {
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    border-top-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+  }
+  #h-left > :last-child {
+    font-size: 1.8rem;
+  }
+  #h-right > #hire-me {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+  }
+
+  #link-bar {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
+  #link-bar:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  #link-bar > i {
+    font-size: 2.3rem !important;
+  }
+
+  #hamber-nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    height: 100vh;
+    color: var(--primerary-color);
+  }
+  #links-list {
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  #links-list > ul > li {
+    list-style: none;
+    cursor: pointer;
+  }
+  #links-list > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 2rem;
+  }
+  #links-list > ul > li > a {
+    font-size: 1.4rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+  }
+  #links-list > ul > li > p {
+    width: 100%;
+    padding: 1px;
+    margin-top: 0.2rem;
+  }
+
+  #h-right {
+    right: 1.5rem;
+    gap: 2rem;
+    transform: translateX(10rem);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1s ease-in-out !important;
+  }
+  #hamber-icons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  #ham-back-icon {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  #hamber-icons button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  #hamber-icons button:hover {
+    cursor: pointer;
+    background: rgb(185, 177, 177);
+  }
+  #ham-back-icon > i {
+    color: var(--primerary-color);
+    font-size: 2rem;
+  }
+  #hamber-icons > #ham-mood-icon {
+    display: inline-block;
+    color: var(--primerary-color);
+    font-size: 1.7rem;
+    position: absolute;
+    right: 1rem;
+  }
+}

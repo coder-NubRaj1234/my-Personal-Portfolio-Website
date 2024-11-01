@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primerary-color:#fff;
+    --secondary-color:#212429;
+    --red-color:rgb(237, 27, 62);
+    --mood-color:rgb(81, 77, 77);
+    --box-shadow: rgba(163, 154, 154, 0.35) 0px 5px 15px;
+    --lite-box-shadow:rgba(163, 154, 154, 0.25) 0px 5px 15px;
+    --gray-color:#8e9093;
+    --red-black:rgb(237, 27, 62);
+    --black-red:#000;
+    --white-red:#fff;
+    --box-shadow-red-color:rgb(192, 56, 56);
+    --green-color:rgb(13, 222, 13);
+}
+.mood-color{
+    --primerary-color:#212429;
+    --secondary-color:#ecf0f3;
+    --mood-color:rgb(198, 194, 194);
+    --box-shodow-color:rgba(17, 16, 16, 0.24);
+    --gray-color:rgb(86, 81, 81);
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --red-black:#000;
+    --black-red:rgb(237, 27, 62);
+    --white-red:rgb(237, 27, 62);
+    --green-color:rgb(0, 255, 76);
+}
+body{
+    transition: all 0.5s ease-in-out;
+    background: var(--secondary-color);
+}

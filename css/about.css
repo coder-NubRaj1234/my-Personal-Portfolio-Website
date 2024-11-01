@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#about {
+  width: 100vw;
+  height: 100vh;
+  padding: 7rem 10rem;
+  overflow: hidden;
+}
+#a-container {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 35vw 40vw;
+  gap: 7rem;
+  align-items: center;
+  height: 100%;
+}
+#a-left {
+  height: 100%;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+#a-left > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+  transform: translateY(-100%);
+}
+#a-left > img:hover {
+  transform: scale(1.07) !important;
+}
+#a-right {
+  color: var(--primerary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#a-right > h3,
+#a-right > p {
+  margin-bottom: 2rem;
+}
+#a-right > h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 900;
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+}
+
+#a-right > p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  color: var(--gray-color);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+#cv-btn > i {
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+#cv-btn {
+  font-family: "Lato", serif;
+  font-weight: 900;
+  padding: 15px 10px;
+  width: 15rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: rgb(237, 27, 62);
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow-red-color) 5px 5px 15px;
+  position: relative;
+  top: 2rem;
+  transition: all 1s ease-in-out;
+  transform: translate(0%, 200%);
+  opacity: 0;
+}
+#cv-dow-a {
+  background: red;
+  width: 0px;
+}
+#cv-btn:hover {
+  box-shadow: var(--box-shadow-red-color) -8px -8px 15px;
+  transform: translate(20px, 20px) !important;
+}
+
+/* screen size in max 1621px.. */
+@media screen and (max-width: 1621px) {
+  html {
+    font-size: 16px;
+  }
+  #about {
+    padding: 0rem;
+    grid-template-columns: 30vw 40vw;
+    /* grid-template-rows: 80vh; */
+  }
+  #a-container {
+    justify-content: center;
+    gap: 9rem;
+    align-items: center;
+    margin: 0 4rem;
+  }
+
+  #a-left {
+    height:75%;
+  }
+  #a-right > p {
+    font-size: 0.9rem;
+  }
+  #cv-btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    width: 13rem;
+  }
+  #cv-btn > i {
+    font-size: 1.2rem;
+  }
+}
+
+

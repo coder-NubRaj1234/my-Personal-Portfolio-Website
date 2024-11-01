@@ -1,0 +1,85 @@
+#footer {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.f-cards {
+  color: var(--primerary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  max-width: 20%;
+}
+#footer > :nth-child(1) {
+  transform: translateY(90%);
+}
+#footer > :nth-child(2) {
+  transform: translateY(90%);
+}
+#footer > :nth-child(3) {
+  transform: translateY(90%);
+}
+.f-cards > div {
+  min-height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f-cards > div > p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  color: var(--gray-color);
+  font-weight: 500;
+}
+#contact-number > :nth-child(1),
+#addresh > :nth-child(1),
+#email > :nth-child(1) {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+#addresh,
+#contact-number {
+  padding-left: 3rem;
+}
+#contact-number > :nth-child(1) {
+  color: green;
+}
+#addresh > :nth-child(1) {
+  color: blue;
+  cursor: pointer;
+}
+#email > :nth-child(1) {
+  color: var(--red-color);
+}
+
+
+
+@media screen and (max-width: 1621px) {
+  .f-cards{
+    font-size: 1rem;
+  }
+
+  #contact-number > :nth-child(1),
+  #addresh > :nth-child(1),
+  #email > :nth-child(1) {
+    font-size: 1.8rem;
+  }
+}
+
+/* meadia queary for max-width 1440px */
+@media screen and (max-width: 1440px){
+  .f-cards{
+    font-size: 0.9rem;
+  }
+  #contact-number > :nth-child(1),
+  #addresh > :nth-child(1),
+  #email > :nth-child(1) {
+    font-size: 1.7rem;
+  }
+}
