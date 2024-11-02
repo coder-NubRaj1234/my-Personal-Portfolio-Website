@@ -1,5 +1,5 @@
 #footer {
-  height: 20vh;
+  min-height: 20vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
@@ -58,10 +58,8 @@
   color: var(--red-color);
 }
 
-
-
 @media screen and (max-width: 1621px) {
-  .f-cards{
+  .f-cards {
     font-size: 1rem;
   }
 
@@ -73,13 +71,62 @@
 }
 
 /* meadia queary for max-width 1440px */
-@media screen and (max-width: 1440px){
-  .f-cards{
+@media screen and (max-width: 1440px) {
+  .f-cards {
     font-size: 0.9rem;
   }
   #contact-number > :nth-child(1),
   #addresh > :nth-child(1),
   #email > :nth-child(1) {
     font-size: 1.7rem;
+  }
+}
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #footer {
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #footer p {
+    text-align: center;
+  }
+  .f-cards > div {
+    justify-content: flex-start;
+  }
+  .f-cards {
+    max-height: 20vh;
+    font-size: 1.5rem;
+    max-width: none;
+    min-width: 20%;
+    margin-left: 2rem;
+  }
+
+  .f-cards i {
+    font-size: 2rem;
+  }
+
+  #addresh,
+  #contact-number {
+    padding-left: 0rem;
+  }
+  #footer > :nth-child(1) {
+    transform: translateX(-25vw);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  }
+
+  #footer > :nth-child(2) {
+    transform: translateX(-40vw);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+  }
+  #footer > :nth-child(3) {
+    transform: translateX(-40vw);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
   }
 }

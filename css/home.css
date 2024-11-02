@@ -283,18 +283,23 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   #home {
-    height: calc(100vh - 8vh) !important;
+    min-height: calc(100vh - 8vh) !important;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0 2rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: visible;
   }
   #my-self {
-    /* background: pink; */
-    padding-top: 5rem;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
   }
+
+  
   #my-self h4 {
     font-size: 1rem !important;
+    margin: 0;
   }
   #my-self > h2 {
     line-height: 1.3;
@@ -311,6 +316,8 @@
   #my-self > #home-text {
     font-size: 1.2rem !important;
     line-height: 1.6;
+    position: absolute;
+    top: 45%;
   }
   #home-foot h2 {
     font-size: 1.1rem;

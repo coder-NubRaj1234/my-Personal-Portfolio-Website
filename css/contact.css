@@ -93,8 +93,8 @@
   border-radius: 9px;
   box-sizing: border-box;
 }
-#submit>i{
-  margin-left:0.5rem ;
+#submit > i {
+  margin-left: 0.5rem;
 }
 #submit {
   border: none;
@@ -148,31 +148,68 @@
     bottom: 10%;
     left: 44.4%;
   }
-  #con-sucess-mes{
+  #con-sucess-mes {
     font-size: 1.2rem;
   }
 }
 
 /* adding meadia queary in 1440px mix-width.. */
-@media screen and (max-width: 1440px){
-  #contact-me{
+@media screen and (max-width: 1440px) {
+  #contact-me {
     box-sizing: border-box;
   }
   #contact-me > #section-h > h2 {
     transform: translateX(-50vw);
     opacity: 0;
-    transition: opacity 1.5s ease-in-out , transform 1s ease-in-out !important;
-    font-size:2.2rem ;
+    transition: opacity 1.5s ease-in-out, transform 1s ease-in-out !important;
+    font-size: 2.2rem;
   }
   #contact-me > #section-h > h1 {
     font-size: 2.5rem;
     opacity: 0;
-    transform:translateY(3rem);
-    transition: opacity 1.5s ease-in-out , transform 1s ease-in-out !important;
+    transform: translateY(3rem);
+    transition: opacity 1.5s ease-in-out, transform 1s ease-in-out !important;
   }
 
-  #submit{
+  #submit {
     left: 43.5%;
     bottom: 20%;
+  }
+}
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #contact-me > #section-h {
+    height: 15vh;
+  }
+  #contact-me > #section-h > h1 {
+    font-size: 2rem;
+  }
+  #contact-me > #section-h > p {
+    width: 30vw;
+    padding: 0.1rem;
+  }
+  #form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0rem;
+  }
+  #input {
+    width: 80%;
+  }
+  #text-area {
+  }
+  #submit {
+    position: static;
+    font-size: 1.5rem;
+    width: 15rem;
+    padding: 1rem;
+    margin-top: 8rem;
+  }
+  #submit:hover {
+    box-shadow: var(--box-shadow-red-color) 8px 8px 15px;
+    transform: translate(0) !important;
   }
 }

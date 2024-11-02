@@ -188,3 +188,41 @@
     font-size: 1rem;
   }
 }
+
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #projects > #section-h {
+    height: 10vh;
+    /* background: pink; */
+  }
+  #projects > #section-h > p {
+    width: 28vw;
+    transform: translateX(-60vw);
+    padding: 0.1rem;
+  }
+  
+  .row > .project-type > p{
+    transform: translateX(70vw);   
+    padding: 0.1rem; 
+  }
+  .item-container{
+    min-height:35vh;
+  }
+  .item-container > .item{
+    min-width: 90%;
+    transform: scale(1) !important;
+  }
+  .projects-info > a {
+    font-size: 1rem;
+  }
+  .projects-info > h2 {
+    font-size: 1.5rem;
+  }
+  .item:hover {
+    transition: all 0.01s ease-in-out !important;
+    transform: scale(1) !important;
+  }
+}

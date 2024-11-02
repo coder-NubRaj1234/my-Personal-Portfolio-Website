@@ -104,7 +104,6 @@
   #about {
     padding: 0rem;
     grid-template-columns: 30vw 40vw;
-    /* grid-template-rows: 80vh; */
   }
   #a-container {
     justify-content: center;
@@ -130,3 +129,35 @@
 }
 
 
+
+/* adding meadia quary for mobile screen min-width = 300px & max-width = 500px */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #about{
+    min-height: 110vh;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+  #a-container {
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    margin: 0 1.5rem;
+  }
+  #a-left > img:hover {
+    transform: scale(1) !important;
+  }
+  #a-right > p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  #cv-btn {
+    font-size: 1.2rem;
+    width: 40vw;
+    padding: 1rem;
+  }
+  #cv-btn > i {
+    font-size: 1.5rem;
+  }
+}
