@@ -18,22 +18,6 @@ window.addEventListener("load", function (e) {
 });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //this code for > if user click on my accouns icons...............
 const IconContainer = document.querySelector("#find-icons")
 const Contactsicons = Array.from(IconContainer.getElementsByTagName("button"));

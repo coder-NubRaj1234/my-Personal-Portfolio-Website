@@ -1,121 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
-
-
-::-webkit-scrollbar{
-  width:0.8rem;
+::-webkit-scrollbar {
+  width: 0.8rem;
   background: transparent;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--primerary-color);
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
-
-.hi-opacity{
+.hi-opacity {
   opacity: 1 !important;
-  transition: all 1.5s ease-in-out !important;
+  transition: opacity 1.5s ease-in-out !important;
 }
 
-.low-opacity{
+.low-opacity {
   opacity: 0.1 !important;
-  transition: all 1s ease-in-out !important;
+  transition: opacity 1s ease-in-out !important;
 }
-.opacity{
+.opacity {
   opacity: 1 !important;
 }
-.input-size{
+.input-size {
   width: 100% !important;
-  transition:width 1s ease-in-out , padding 1s ease-in-out !important;
+  transition: width 1s ease-in-out, padding 1s ease-in-out !important;
 }
-.text-area-size{
+.text-area-size {
   width: 100% !important;
   height: 100% !important;
-  transition:width 1s ease-in-out  , height 1s ease-in-out , padding 1s ease-in-out !important;
+  transition: width 1s ease-in-out, height 1s ease-in-out,
+    padding 1s ease-in-out !important;
 }
 
 .visible {
   transform: translate(0) !important;
   opacity: 1 !important;
-  transition:transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
-.text-opacity-slow{
+.text-opacity-slow {
   opacity: 0 !important;
 }
-.text-opacity-height{
+.text-opacity-height {
   opacity: 1 !important;
-  transition: all 1.5s ease-in-out  !important;
+  transition: all 1.5s ease-in-out !important;
 }
 
 #section-h {
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: var(--primerary-color);
-    padding-bottom: 4rem;
-    padding-top: 3rem;
-  }
-  #section-h > h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    font-family: "Kanit", sans-serif;
-  }
-  #section-h > h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: "Kanit", sans-serif;
-  }
-  #section-h > p {
-    padding: 2px;
-    width: 10vw;
-    margin: 0.7rem 0 1rem 0;
-    background: var(--red-color);
-  }
-
-  .red-border{
-    border: 2px solid red !important;
-  }
-  .loader{
-    width: 100px;
-    position: absolute;
-    top: 30%;
-    left: 47.5%;
-    color: var(--primerary-color);
-    z-index: 10;
-    display: block;
-  }
-
-  body{
-    overflow-x: hidden !important;
-  }
-
-  @media screen and (max-width: 1621px) {
-    .loader{
-      width:5vw !important;
-      top: 32%;
-    }
-  }
-
-  
-@media screen and (max-width: 1621px) {
-  ::-webkit-scrollbar{
-    width:0.6rem;
-    background: transparent;
-  }
-  
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primerary-color);
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+}
+#section-h > h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+#section-h > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Kanit", sans-serif;
+}
+#section-h > p {
+  padding: 2px;
+  width: 10vw;
+  margin: 0.7rem 0 1rem 0;
+  background: var(--red-color);
 }
 
+.red-border {
+  border: 2px solid red !important;
+}
+.loader {
+  width: 100px;
+  position: absolute;
+  top: 30%;
+  left: 47.5%;
+  color: var(--primerary-color);
+  z-index: 10;
+  display: block;
+}
 
-@media (max-width: 480)  and (min-width:320px){
-  ::-webkit-scrollbar{
-    width:0rem !important;
+body {
+  overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 1621px) {
+  .loader {
+    width: 5vw !important;
+    top: 32%;
+  }
+}
+
+@media screen and (max-width: 1621px) {
+  ::-webkit-scrollbar {
+    width: 0.6rem;
     background: transparent;
   }
-  ::-webkit-scrollbar-thumb{
+}
+
+@media (max-width: 480) and (min-width: 320px) {
+  ::-webkit-scrollbar {
+    width: 0rem !important;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
     background: transparent !important;
-    border-radius:0rem !important;
+    border-radius: 0rem !important;
   }
 }

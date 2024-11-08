@@ -142,7 +142,7 @@ function setLiWidth() {
 
         items.addEventListener("mouseover", function (e) {
             e.currentTarget.lastElementChild.classList.toggle("link-hover");
-          
+
         });
         items.addEventListener("mouseout", function (e) {
             e.currentTarget.lastElementChild.classList.toggle("link-hover");
@@ -192,14 +192,12 @@ let loaderFilePath = '/svg/white-loader.svg';
 function moodIconSet() {
     moodIcon.addEventListener("click", function (e) {
         let elm = e.currentTarget.firstElementChild;
-        console.log(e.currentTarget);
-        if (elm.classList.contains("fa-sun")) {
-            elm.classList.remove("fa-sun");
-            elm.classList.add("fa-moon");
+        console.log(elm);
+        if (elm.textContent == "light_mode") {
+            elm.textContent = "dark_mode";
             loaderFilePath = "/svg/black-loader.svg";
-        } else {
-            elm.classList.add("fa-sun");
-            elm.classList.remove("fa-moon");
+        } else if (elm.textContent == "dark_mode") {
+            elm.textContent = "light_mode";
             loaderFilePath = "/svg/white-loader.svg";
         };
         body.classList.toggle("mood-color");

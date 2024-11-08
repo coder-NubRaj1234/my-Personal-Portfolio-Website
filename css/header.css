@@ -142,9 +142,9 @@ header {
   animation: hairBtnAnim 1.5s ease-in-out infinite;
 }
 
-#h-right > button > i {
+#h-right > button > span {
   color: var(--primerary-color);
-  font-size: 20px;
+  font-size:1.7rem;
 }
 #hire-me:hover {
   opacity: 0.8;

@@ -38,7 +38,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
     const contactFormCon = document.querySelector("#form-container");
     const hairFormCon = document.getElementById("hair-me-container");
 
-    
+
 
     //send mail loader .....
     const loaderElm = document.createElement("img");
@@ -255,8 +255,9 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
             let response = await fetch(URL);
             let result = await response.json();
 
-            if (response.ok) {
-                if (result.state == 'deliverable') {
+           console.log(response.ok)
+          
+                if (result.state == 'deliverable' || result.message !== "Validation error") {
                     emialIsValid = true;
 
                     inputEmailElm.classList.remove("red-border");
@@ -269,11 +270,9 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
                     inputEmailElm.classList.add("red-border");
                     errorMessageForEmial(message);
                     loaderRomove();
+                    console.log(result.message)
                 };
-            } else {
-                loaderRomove();
-            };
-
+         
         })();
 
     };
@@ -375,7 +374,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
                 sendMessage(sendMessageFail);
                 isContactFormSend ? conSendMessageElm.classList.add("red-color") : hairSendMessageElm?.classList.add("red-color");
             });
-    };console
+    }; console
     function sendMessage(message) {
         if (isContactFormSend) {
             conSendMessageElm.classList.remove("red-color")
