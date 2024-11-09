@@ -136,7 +136,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
   #about{
-    min-height: 100vh;
+    min-height: 110vh;
   }
   #a-container {
     grid-template-columns:1fr;
