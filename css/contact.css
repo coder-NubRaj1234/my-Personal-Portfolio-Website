@@ -118,7 +118,8 @@
 }
 #submit:hover {
   box-shadow: var(--box-shadow-red-color) 8px 8px 15px;
-  transform: translate(-20px, -20px) !important;
+  transform: translate(-15px, -15px) !important;
+  transition: all 2s ease-in-out;
 }
 
 /* add meadia query. */
@@ -198,8 +199,6 @@
   }
   #input {
     width: 80%;
-  }
-  #text-area {
   }
   #submit {
     position: static;
