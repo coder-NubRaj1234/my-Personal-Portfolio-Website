@@ -155,6 +155,7 @@
     font-size: 1.2rem;
     width: 40vw;
     padding: 1rem;
+    transform: translateY(0%);
   }
   #cv-btn > i {
     font-size: 1.5rem;
