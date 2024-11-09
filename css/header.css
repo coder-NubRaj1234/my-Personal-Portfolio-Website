@@ -312,6 +312,7 @@ header {
     background: transparent;
     border: none;
     outline: none;
+    color: var(--primerary-color);
   }
 
   #link-bar:hover {
