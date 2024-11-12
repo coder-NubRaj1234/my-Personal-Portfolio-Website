@@ -93,8 +93,8 @@
 }
 #cv-btn:hover {
   box-shadow: var(--box-shadow-red-color) 8px 8px 15px;
-  transform: translate(-5px, -10px) !important;
-  transition: all 1s ease-in;
+  transform: translate(-10px, -10px) !important;
+  transition: all 1.5s ease-in-out;
 }
 
 /* screen size in max 1621px.. */

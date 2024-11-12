@@ -184,7 +184,7 @@
 @media screen and (max-width: 1621px) {
   #home {
     padding: 5rem 6rem 0 5rem;
-    gap: 10rem;
+    gap: 8rem;
     grid-template-columns: 1fr 30vw;
   }
   #my-self {
@@ -257,8 +257,7 @@
   }
   #skill-img > img:hover {
     transform: scale(1.1) !important;
-    transition: transform 0s !important ;
-    /* padding: 0.6rem; */
+    transition: transform 0s !important;
   }
 }
 

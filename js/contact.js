@@ -239,9 +239,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
             var message = "";
             errorMessageForEmial(message);
             sendEmail(fillForm);
-        } else {
-            console.log(name_Value, message_Value, emialIsValid, phoneNumber)
-        };
+        }
     };
 
     //check Emial Validation..
@@ -255,7 +253,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
             let response = await fetch(URL);
             let result = await response.json();
 
-           console.log(response.ok)
+           
           
                 if (result.state == 'deliverable' || result.message !== "Validation error") {
                     emialIsValid = true;
@@ -270,7 +268,6 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
                     inputEmailElm.classList.add("red-border");
                     errorMessageForEmial(message);
                     loaderRomove();
-                    console.log(result.message)
                 };
          
         })();
@@ -343,7 +340,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
     const conSendMessageElm = document.getElementById("con-sucess-mes");
     const hairSendMessageElm = document.getElementById("hair-form-message");
 
-    const sendMessageSucess = "Message SucessFully Sended <i class='fa-solid fa-check'></i>";
+    const sendMessageSucess = "Thanks For Message. I Well Reply Soon <i class='fa-solid fa-check'></i>";
     const sendMessageFail = "Mess age Fail Try Again<i class='fa-regular fa-circle-xmark'></i>";
 
     function sendEmail() {
@@ -374,7 +371,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
                 sendMessage(sendMessageFail);
                 isContactFormSend ? conSendMessageElm.classList.add("red-color") : hairSendMessageElm?.classList.add("red-color");
             });
-    }; console
+    };
     function sendMessage(message) {
         if (isContactFormSend) {
             conSendMessageElm.classList.remove("red-color")

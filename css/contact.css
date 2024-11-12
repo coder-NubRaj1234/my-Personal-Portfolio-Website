@@ -118,8 +118,8 @@
 }
 #submit:hover {
   box-shadow: var(--box-shadow-red-color) 8px 8px 15px;
-  transform: translate(-15px, -15px) !important;
-  transition: all 2s ease-in-out;
+  transform: translate(-10px, -10px) !important;
+  transition: all 1.5s ease-in-out;
 }
 
 /* add meadia query. */
