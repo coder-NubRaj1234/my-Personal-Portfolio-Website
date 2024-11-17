@@ -113,20 +113,11 @@
   #contact-number {
     padding-left: 0rem;
   }
-  #footer > :nth-child(1) {
-    transform: translateX(-25vw);
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-  }
-
-  #footer > :nth-child(2) {
-    transform: translateX(-40vw);
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-  }
+  #footer > :nth-child(1),
+  #footer > :nth-child(2),
   #footer > :nth-child(3) {
-    transform: translateX(-40vw);
+    transform: translateY(90%);
     opacity: 0;
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
   }
 }
