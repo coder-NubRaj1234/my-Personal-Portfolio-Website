@@ -271,4 +271,7 @@
   #hair-black-btn {
     font-size: 2.5rem;
   }
+  #hair-black-btn{
+    transform: translateX(180%);
+  }
 }
