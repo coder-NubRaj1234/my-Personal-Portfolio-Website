@@ -308,7 +308,6 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
         }
         else if (!phoneNumber && !number_Value) {
             inputNumberElm.classList.add("red-border");
-
         }
         else {
             inputNumberElm.classList.add("red-border");
