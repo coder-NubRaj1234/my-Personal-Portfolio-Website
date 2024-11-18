@@ -244,8 +244,7 @@
   #form-right {
     height: 15vh;
   }
-  #form-left > input,
-  #h-message {
+  #form-left > input , #form-right > textarea {
     font-size: 1.2rem;
   }
   #hair-me-container > form label {
