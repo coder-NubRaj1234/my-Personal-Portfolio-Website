@@ -200,6 +200,10 @@
   #input {
     width: 80%;
   }
+  #input > input, #text-area > textarea{
+    font-size: 1rem;
+    font-size: 1.2rem;
+  }
   #submit {
     position: static;
     font-size: 1.5rem;
