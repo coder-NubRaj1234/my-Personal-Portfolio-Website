@@ -26,14 +26,14 @@
   transform: translate(0) !important;
   transition: transform 1s ease-in-out !important;
 }
-/* .form-Animation-right {
+.form-Animation-right {
   transform: translateX(200%);
   transition: transform 1s ease-in-out;
 }
 .form-Animation-left {
   transform: translate(-200%);
   transition: transform 1s ease-in-out;
-} */
+}
 
 .from-display-visible {
   display: block !important;
