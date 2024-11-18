@@ -230,9 +230,9 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   #hair-me-container {
-    width: calc(100% - 4rem);
+    width: calc(100% - 8rem);
     left: 0;
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
   #hair-me-container > form > #hair-form-container {
     flex-direction: column;
@@ -241,11 +241,12 @@
   #form-right {
     width: 100%;
   }
-  #form-right{
+  #form-right {
     height: 15vh;
   }
-  #form-left > input{
-    font-size: 1rem;
+  #form-left > input,
+  #h-message {
+    font-size: 1.2rem;
   }
   #hair-me-container > form label {
     font-size: 1.1rem;
@@ -253,7 +254,10 @@
   #hair-me-container > form label > span {
     font-size: 1rem;
   }
-  #h-message  {
+  #h-message {
     font-size: 1rem;
+  }
+  .hair-input-aim , .hair-textarea-aim{
+    padding: 1.2rem;
   }
 }
