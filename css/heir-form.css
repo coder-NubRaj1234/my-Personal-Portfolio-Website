@@ -142,7 +142,7 @@
   right: 2rem;
   transform: translateX(185%);
   transition: all 1s ease-in-out !important;
-  opacity: 0 ;
+  opacity: 0;
 }
 
 #hair-black-btn:hover,
@@ -174,8 +174,6 @@
 }
 
 @media screen and (max-width: 1621px) {
-
-
   #form-left > input,
   #h-message {
     font-size: 0.8rem;
@@ -189,34 +187,34 @@
   #hair-me-container > form label {
     font-size: 0.9rem;
   }
-  #form-left  ,#form-right{
+  #form-left,
+  #form-right {
     gap: 0.3rem;
   }
 
-  .hair-input-aim , .hair-textarea-aim {
+  .hair-input-aim,
+  .hair-textarea-aim {
     padding: 0.8rem;
   }
 
-  #hair-send-btn{
+  #hair-send-btn {
     font-size: 0.9rem;
     padding: 0.5rem 1.5rem;
     top: 0.1rem;
   }
 
-  #hair-send-btn > i{
+  #hair-send-btn > i {
     font-size: 1rem;
   }
-  #hair-black-btn{
+  #hair-black-btn {
     font-size: 1.7rem;
   }
-  
 }
 
 /* meadia queary for 1440px Max-Width */
 
-@media screen and (max-width: 1440px){
-
-  #hair-me-container{
+@media screen and (max-width: 1440px) {
+  #hair-me-container {
     top: 20%;
     min-height: 30vh;
   }
@@ -225,5 +223,37 @@
   }
   #hair-me-container > form label {
     font-size: 0.8rem;
+  }
+}
+
+/* mobile screen */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #hair-me-container {
+    width: calc(100% - 4rem);
+    left: 0;
+    margin: 0 2rem;
+  }
+  #hair-me-container > form > #hair-form-container {
+    flex-direction: column;
+  }
+  #form-left,
+  #form-right {
+    width: 100%;
+  }
+  #form-right{
+    height: 15vh;
+  }
+  #form-left > input{
+    font-size: 1rem;
+  }
+  #hair-me-container > form label {
+    font-size: 1.1rem;
+  }
+  #hair-me-container > form label > span {
+    font-size: 1rem;
+  }
+  #h-message  {
+    font-size: 1rem;
   }
 }

@@ -13,7 +13,6 @@ window.addEventListener("load", function (e) {
         homenewText = homenewText.replace("JavaScript", "JS")
         homeText.textContent = homenewText;
         homeH2Text.innerHTML = homeH2Text.innerHTML.replace(regex, "");
-        console.log(newHomeText);
     };
 });
 

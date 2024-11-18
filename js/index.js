@@ -3,6 +3,8 @@ import { liElm, navAceElm, sideBar } from "./header.js"
 
 
 
+
+
 //add Anamation in page......
 const animationElements = Array.from(document.querySelectorAll(".hiddenClass , .text-hidden , .text-opacity-slow , .defult-input-size , .defult-text-area-size"));
 

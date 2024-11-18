@@ -192,7 +192,6 @@ let loaderFilePath = '/svg/white-loader.svg';
 function moodIconSet() {
     moodIcon.addEventListener("click", function (e) {
         let elm = e.currentTarget.firstElementChild;
-        console.log(elm);
         if (elm.textContent == "light_mode") {
             elm.textContent = "dark_mode";
             loaderFilePath = "/svg/black-loader.svg";
