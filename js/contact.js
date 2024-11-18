@@ -61,7 +61,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
     };
 
     function loaderRomove() {
-        // loaderElm.remove();
+        loaderElm.remove();
     };
 
 
