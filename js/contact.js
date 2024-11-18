@@ -61,7 +61,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
     };
 
     function loaderRomove() {
-        loaderElm.remove();
+        // loaderElm.remove();
     };
 
 
@@ -253,23 +253,23 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
             let response = await fetch(URL);
             let result = await response.json();
 
-           
-          
-                if (result.state == 'deliverable' || result.message !== "Validation error") {
-                    emialIsValid = true;
 
-                    inputEmailElm.classList.remove("red-border");
-                    checkFormValidation(fillForm);
 
-                }
-                else {
-                    emialIsValid = false;
-                    message = "<span>Incorrect emial addresh</span>";
-                    inputEmailElm.classList.add("red-border");
-                    errorMessageForEmial(message);
-                    loaderRomove();
-                };
-         
+            if (result.state == 'deliverable' || result.message !== "Validation error") {
+                emialIsValid = true;
+
+                inputEmailElm.classList.remove("red-border");
+                checkFormValidation(fillForm);
+
+            }
+            else {
+                emialIsValid = false;
+                message = "<span>Incorrect emial addresh</span>";
+                inputEmailElm.classList.add("red-border");
+                errorMessageForEmial(message);
+                loaderRomove();
+            };
+
         })();
 
     };
@@ -334,7 +334,7 @@ const EmilKey = "1lpR-z-dR4iirjwP5"
             emialIsValid = false;
             inputEmailElm.classList.add("red-border");
             errorMessageForEmial("<span>Fill This Field !!</span>");
-        }
+        };
     };
 
     const conSendMessageElm = document.getElementById("con-sucess-mes");
