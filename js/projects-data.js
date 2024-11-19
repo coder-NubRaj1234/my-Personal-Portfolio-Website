@@ -73,14 +73,14 @@ const projectsData = [
         img:"/projects-images/simples-pg-img/COMDOWN.jpg",
         name:"COMDOWN",
         dis:"This Projects Related TO Comdown timer.",
-        path:"/projects/SIMPLE-PROJECTS/COUNTDOWN-TIMER-PAROJECTS/COUNTDOWN-TIMER-PROJECT/index.html",
+        path:"/projects/SIMPLE-PROJECTS/COUNTDOWN-TIMER-PAROJECTS/index.html",
     },
     {
         id:"Simple-Projects",
         img:"/projects-images/simples-pg-img/OTP-GENERATER.png",
         name:"OTP GENERATER",
         dis:"This Projects Related TO OTP GENERATER.",
-        path:"/projects/SIMPLE-PROJECTS/OTP-GENERATER-APP/OTP-GENERATER-APP/index.html",
+        path:"/projects/SIMPLE-PROJECTS/OTP-GENERATER-APP/index.html",
     },
 
 ];

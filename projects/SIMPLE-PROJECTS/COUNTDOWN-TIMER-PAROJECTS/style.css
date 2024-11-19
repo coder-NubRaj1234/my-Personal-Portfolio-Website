@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 45%;
+    place-items: center;
+    justify-content: center;
+}
+
+#img-container {
+    height: 60%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#gift-info {
+    min-height: 45%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 2rem;
+}
+
+#gift-info>p {
+    text-align: center;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: salmon;
+}
+
+#gift-info h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding: 1rem;
+    color: rgb(9, 177, 119);
+}
+
+#gifty-deadline {
+    width: 100%;
+    height: 20%;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+#exprise{
+    font-size: 2rem !important;
+    width: 30vw !important;
+    color: red;
+}
+#gifty-deadline>div {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(5, 120, 102);
+    color: #fff;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+}
+#giveaway-end-time{
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(2, 108, 90);
+}
+
+#gifty-deadline h4 {
+    font-size: 4rem;
+}
+
+#gifty-deadline span {
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px) {
+    #section {
+        grid-template-columns: 30%;
+    }
+    #img-container{
+        height: 70%;
+    }
+    #gift-info{
+        /* height: 85%;
+        width: 66vw; */
+    }
+  
+}
