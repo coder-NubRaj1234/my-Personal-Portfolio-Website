@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+#header{
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  background: #efeded;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#left {
+  margin-left: 10em;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+#right {
+  margin-right: 10em;
+  display: flex;
+}
+#right i {
+    font-size: 20px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+#right > p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* search bar */
+
+main{
+    background: #efeded;
+}
+#search{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+#secrch-icon{
+    position: relative;
+    left: 2.8rem;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(91, 86, 86);
+}
+#input{
+    outline: none;
+    border: none;    
+    padding: 1rem 3.8rem;
+    width: 20vw;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: #fff;
+}
+#secect{
+    padding: 10px 60px 10px 20px;
+    font-size: 18px;
+    appearance: none; 
+    border: none;
+    outline: none;
+    border-radius: 5px; 
+    background: #fff;
+}
+#dowm-arrow{
+    font-size: 20px;
+    position: relative;
+    left: 12rem;
+ 
+}
+
+#countery-list{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    padding: 4rem;
+    place-items: center;
+}
+.container{
+    width: 20vw;
+    height: 40vh;
+    background: #fff;
+    margin-top: 3em;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img{
+    width: 100%;
+    height: 55%;
+    border-bottom: 1px solid gray;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    /* object-fit:cover; */
+}
+.info{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-left:2rem ;
+}
+.info > h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    padding: 15px 0;
+}
+.info > :nth-child(2){
+    /* margin-top: 15px; */
+}
+.info  p{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    line-height:30px;
+}
+.info  p > span{
+    color: gray;
+    padding-left: 5px;
+}
+#coatOfArms{
+    width: 50px;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+#none{
+    display: none;
+}

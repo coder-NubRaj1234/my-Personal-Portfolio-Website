@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="left">
+        <h2>Where in the World</h2>
+      </div>
+      <div id="right">
+        <i class="fa-regular fa-moon"></i>
+        <p>dark mode</p>
+      </div>
+    </header>
+    <main>
+      <div id="search">
+        <div>
+          <i id="secrch-icon" class="fa-solid fa-magnifying-glass"></i>
+          <input id="input" type="text" placeholder="Search Countery Name " />
+        </div>
+        <div id="drope-down">
+          <i id="dowm-arrow" class="fa-solid fa-angle-down"></i>
+          <select id="secect">
+            <option value="Filter By Region" selected id="none">
+              Filter By Region
+            </option>
+            <option value="Asia">Asia</option>
+            <option value="Africa">Africa</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+            <option value="Europe">Europe</option>
+          </select>
+        </div>
+      </div>
+      <section id="countery-list"></section>
+    </main>
+    <script src="app.js" async defer></script>
+  </body>
+</html>

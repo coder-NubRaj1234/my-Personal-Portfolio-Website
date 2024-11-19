@@ -8,7 +8,7 @@ const projectsData = [
         name:"Snake",
         dis:"This Projects Related TO Snake Game.",
         path:"/projects/GAME-PROJECTS/SNAKE-GAME-PROJECT/files/index.html",
-      
+        
     },
     {
         id:"Game-Projects",
@@ -45,7 +45,7 @@ const projectsData = [
         img:"/projects-images/API-pg-img/COUNTERY-DATA.jpg",
         name:"Currency Converter",
         dis:"This Projects Related TO COUNTERY DATA.",
-        path:"/projects/API-PROJECTS/COUNTERY-DATA/COUNTERY-DATA-AIP-PROJECT/index.html",
+        path:"/projects/API-PROJECTS/COUNTERY-DATA/index.html",
     },
     {
         id:"API-Projects",
