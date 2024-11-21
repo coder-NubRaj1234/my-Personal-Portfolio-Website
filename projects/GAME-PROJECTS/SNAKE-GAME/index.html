@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SNAKE GAME MEAD BY ME</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="./shunds/">
+  </head>
+  <body>
+    <section id="game-container">
+      <!-- game Lavel board -->
+      <div id="lables">
+        <select name="Lavel" id="selectr">
+          <option id="lables-postion" selected>Lables</option>
+          <option data-speed="5" value="0">Slow</option>
+          <option data-speed="8" value="1">Medium</option>
+          <option data-speed="12" value="2">Heigh</option>
+        </select>
+      </div>
+      <!-- sound setting....... -->
+      <div id="sound-container">
+        <h4>
+          Sounds
+          <button id="dowArrow"><i class="fa-solid fa-angle-down"></i></button>
+        </h4>
+        <div id="sound">
+          <ul>
+            <li>
+              <i class="fa-solid fa-music"></i>
+              <span>Snake Music</span
+              ><button id="music">
+                <span>on</span><span>off</span
+                ><span id="music-slider" class="right"></span>
+              </button>
+            </li>
+            <li>
+              <i class="fa-solid fa-volume-low"></i>
+              <span>Snake Sounds</span
+              ><button id="snake-sound">
+                <span>on</span><span>off</span
+                ><span id="sound-slider" class="right"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- gaem score.......... -->
+      <div id="score-header">
+        <div id="height-score">Hi Score : 0🏆</div>
+        <button id="play-pouse-btn">
+          <i id="play-pause-icon" class="fa-solid fa-play"></i>
+        </button>
+        <div id="current-score">Score : 0 🍎</div>
+      </div>
+      <!-- game board ..........-->
+      <div id="game-board"></div>
+
+      <div id="game-controlor">
+        <button id="Arrow-up"><i class="fa-solid fa-caret-up"></i></button>
+        <button id="Arrow-down"><i class="fa-solid fa-caret-down"></i></button>
+        <button id="Arrow-left"><i class="fa-solid fa-caret-left"></i></button>
+        <button id="Arrow-right"><i class="fa-solid fa-caret-right"></i></button>
+      </div>
+    </section>
+    <script src=""></script>
+    <script type="module" src="game.js"></script>
+    <script type="module" src="sound.js"></script>
+  </body>
+</html>

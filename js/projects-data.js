@@ -7,7 +7,7 @@ const projectsData = [
         img: "/projects-images/game-pg-img/snake-image.jpg",
         name: "Snake",
         dis: "This Projects Related TO Snake Game.",
-        path: "/projects/GAME-PROJECTS/TIC_TOC_/index.html",
+        path: "./projects/GAME-PROJECTS/SNAKE-GAME/index.html",
     },
     {
         id: "Game-Projects",
