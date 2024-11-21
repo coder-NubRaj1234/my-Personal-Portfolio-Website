@@ -14,7 +14,7 @@ const projectsData = [
         img: "/projects-images/game-pg-img/tic-tac-toe-game-image.png",
         name: "kit kat kot",
         dis: "This Projects Related TO kit kat kot game.",
-        path: "/projects/GAME-PROJECTS/TIC_TOC_/index.html",
+        path: "/projects/GAME-PROJECTS/TIK-TAK-TOK/index.html",
     },
     {
         id: "Game-Projects",
