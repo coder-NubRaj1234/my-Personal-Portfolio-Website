@@ -8,6 +8,7 @@ const projectsData = [
         name:"Snake",
         dis:"This Projects Related TO Snake Game.",
         path:"/projects/GAME-PROJECTS/SNAKE-GAME-PROJECT/files/index.html",
+        // projects/GAME-PROJECTS/SNAKE-GAME-PROJECT/files/index.html
         
     },
     {
