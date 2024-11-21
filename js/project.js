@@ -67,9 +67,6 @@ function createElements(items, index) {
         h1.classList.add("hiddenClass")
         h1.textContent = itemId;
 
-
-
-
         projectHeadingElm.append(h1, p);
         itemsContainerElm.classList.add("item-container");
 
@@ -102,7 +99,21 @@ itmeContainer.forEach(function (item, index) {
     if (item.scrollWidth === item.offsetWidth) {
         item.style.justifyContent = 'center';
     };
-    
+
 });
 
+//whine user click on game container the game open...........
+
+const gamesItsms = Array.from(document.querySelectorAll(".item"));
+
+
+gamesItsms.forEach(function (items) {
+
+    items.addEventListener("click", function (item) {
+      const projCon = item.target.closest(".item");
+      if(projCon.classList.contains("item")){
+       window.location = (projCon.children[1].children[0].href);
+      }
+    })
+});
 
