@@ -292,7 +292,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   #home {
-    max-height: calc(100vh - 8vh -15vh) !important;
+    max-height: calc(100vh - 8vh - 15vh) !important;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0 2rem;
