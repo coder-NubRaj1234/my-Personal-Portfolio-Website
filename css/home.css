@@ -325,8 +325,12 @@
     position: absolute;
     top: 45%;
   }
+  #home-foot{
+    margin-bottom: 2rem;
+  }
   #home-foot h2 {
     font-size: 1.1rem;
+    text-align: center;
   }
   #find-icons > button {
     padding: 0.4rem 0.6rem;
@@ -335,7 +339,9 @@
   #find-icons > button:nth-child(1) {
     padding: 0.8rem 1rem;
   }
-
+#my-skills > h2{
+  text-align: center;
+}
   #skill-img > img {
     width: 4rem;
     padding: 1rem;
