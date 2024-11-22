@@ -330,7 +330,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 80vw;
+    width: 60vw;
     background: var(--secondary-color);
     box-shadow: var(--box-shadow);
     height: 100vh;
