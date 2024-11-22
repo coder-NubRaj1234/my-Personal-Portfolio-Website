@@ -292,7 +292,7 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
   #home {
-    max-height: calc(100vh - 8vh - 8vh) !important;
+    max-height: calc(100vh - 8vh - 7vh) !important;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     padding: 0 2rem;
@@ -325,9 +325,7 @@
     position: absolute;
     top: 45%;
   }
-  #home-foot{
-    margin-bottom: 2rem;
-  }
+
   #home-foot h2 {
     font-size: 1.1rem;
     text-align: center;
