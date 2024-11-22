@@ -330,7 +330,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60vw;
+    width: 80vw;
     background: var(--secondary-color);
     box-shadow: var(--box-shadow);
     height: 100vh;
@@ -351,7 +351,7 @@ header {
     gap: 2rem;
   }
   #links-list > ul > li > a {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: "Ubuntu", sans-serif;
     font-weight: 900;
   }
@@ -381,8 +381,8 @@ header {
     outline: none;
   }
   #hamber-icons button {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     border: none;
     outline: none;
@@ -394,12 +394,12 @@ header {
   }
   #ham-back-icon > i {
     color: var(--primerary-color);
-    font-size: 2rem;
+    font-size: 3rem;
   }
   #hamber-icons > #ham-mood-icon {
     display: inline-block;
     color: var(--primerary-color);
-    font-size: 1.7rem;
+    font-size: 3rem;
     position: absolute;
     right: 1rem;
   }
