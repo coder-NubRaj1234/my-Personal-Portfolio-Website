@@ -3,6 +3,20 @@ import { liElm, navAceElm, sideBar } from "./header.js"
 
 
 
+//whine the user open the mobile line bar stop scrool..
+let currScrolPosi = "";
+let stopScroll = false;
+
+
+
+
+
+
+
+
+
+
+
 
 
 //add Anamation in page......
@@ -48,11 +62,17 @@ const hamberCon = document.getElementById("hamber-nav-bar");
 const backLinkBtn = document.getElementById("ham-back-icon");
 
 
+//hamer icon..
 hamBarBtn.addEventListener("click", function (e) {
     hamberCon.classList.add("hamer-bar-visible");
+    stopScroll = true;
+    currScrolPosi = window.scrollY;
 });
+//cross icon..
 backLinkBtn.addEventListener("click", function (e) {
     hamberCon.classList.remove("hamer-bar-visible");
+    stopScroll = false;
+    currScrolPosi = "";
 });
 
 
@@ -93,6 +113,14 @@ let isActiveHead = true;
 
 //whine user scroll  navs links active 
 window.addEventListener("scroll", function (e) {
+
+    if (stopScroll) {
+        window.scrollBy({ top: currScrolPosi });
+        // console.log(currScrolPosi , "stop")
+    };
+
+
+
     currentScroll = window.scrollY;
 
 

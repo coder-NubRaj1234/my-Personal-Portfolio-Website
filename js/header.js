@@ -73,9 +73,7 @@ window.addEventListener("resize", function () {
 
         checkNavBar();
         setLiWidth();
-        // moodIconSet();
         setLiElmForClickEvn();
-        // body.classList.remove("mood-color");
     };
 });
 
